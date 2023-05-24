@@ -163,6 +163,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb1-1 .l2c2 {
   grid-area: l2c2;
@@ -174,6 +175,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb1-1 .l2c3 {
   grid-area: l2c3;
@@ -186,6 +188,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb1-1 .l3c2 {
   grid-area: l3c2;
@@ -197,6 +200,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb1-1 .l3c3 {
   grid-area: l3c3;
@@ -209,6 +213,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb1-1 .l4c2 {
   grid-area: l4c2;
@@ -220,6 +225,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb1-1 .l4c3 {
   grid-area: l4c3;
@@ -232,6 +238,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb1-1 .l5c2 {
   grid-area: l5c2;
@@ -243,6 +250,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb1-1 .l5c3 {
   grid-area: l5c3;
@@ -255,6 +263,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 
 .grdTb2-1 {
@@ -359,6 +368,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb2-1 .l1c4 {
   grid-area: l1c4;
@@ -371,6 +381,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb2-1 .l2c2 {
   grid-area: l2c2;
@@ -382,6 +393,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb2-1 .l2c3 {
   grid-area: l2c3;
@@ -393,6 +405,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb2-1 .l2c4 {
   grid-area: l2c4;
@@ -405,6 +418,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 
 .grdTb2-2 {
@@ -529,6 +543,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb2-2 .l1c4 {
   grid-area: l1c4;
@@ -541,6 +556,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb2-2 .l2c2 {
   grid-area: l2c2;
@@ -552,6 +568,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb2-2 .l2c3 {
   grid-area: l2c3;
@@ -563,6 +580,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb2-2 .l2c4 {
   grid-area: l2c4;
@@ -575,6 +593,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb2-2 .l3c2 {
   grid-area: l3c2;
@@ -586,6 +605,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb2-2 .l3c3 {
   grid-area: l3c3;
@@ -597,6 +617,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb2-2 .l3c4 {
   grid-area: l3c4;
@@ -609,6 +630,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb2-2 .l4c2 {
   grid-area: l4c2;
@@ -620,6 +642,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb2-2 .l4c3 {
   grid-area: l4c3;
@@ -631,6 +654,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb2-2 .l4c4 {
   grid-area: l4c4;
@@ -643,6 +667,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 
 .grdTb3-yn {
@@ -840,6 +865,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l1c4 {
   grid-area: l1c4;
@@ -852,6 +878,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l2c2 {
   grid-area: l2c2;
@@ -863,6 +890,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l2c3 {
   grid-area: l2c3;
@@ -874,6 +902,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l2c4 {
   grid-area: l2c4;
@@ -886,6 +915,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l3c2 {
   grid-area: l3c2;
@@ -897,6 +927,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l3c3 {
   grid-area: l3c3;
@@ -908,6 +939,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l3c4 {
   grid-area: l3c4;
@@ -920,6 +952,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l4c2 {
   grid-area: l4c2;
@@ -931,6 +964,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l4c3 {
   grid-area: l4c3;
@@ -942,6 +976,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l4c4 {
   grid-area: l4c4;
@@ -954,6 +989,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l5c2 {
   grid-area: l5c2;
@@ -965,6 +1001,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l5c3 {
   grid-area: l5c3;
@@ -976,6 +1013,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l5c4 {
   grid-area: l5c4;
@@ -988,6 +1026,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l6c2 {
   grid-area: l6c2;
@@ -999,6 +1038,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l6c3 {
   grid-area: l6c3;
@@ -1010,6 +1050,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l6c4 {
   grid-area: l6c4;
@@ -1022,6 +1063,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l7c2 {
   grid-area: l7c2;
@@ -1033,6 +1075,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l7c3 {
   grid-area: l7c3;
@@ -1044,6 +1087,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 .grdTb4-1 .l7c4 {
   grid-area: l7c4;
@@ -1056,6 +1100,7 @@
   height: 80%;
   border: none !important;
   padding: 2px 8px;
+  text-align: right;
 }
 
 .grdTb4-2 {
@@ -1161,6 +1206,7 @@
 }
 
 .grdTb5-1 {
+  visibility: hidden;
   display: grid;
   grid-template-columns: 1fr 120px;
   grid-template-rows: repeat(2, 48px);
