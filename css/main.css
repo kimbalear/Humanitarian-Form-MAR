@@ -266,6 +266,41 @@
   text-align: right;
 }
 
+.r_m_date {
+  float: left;
+  display: grid;
+  grid-template-columns: 300px 200px;
+  grid-template-rows: 48px;
+  grid-auto-columns: 1fr;
+  gap: 8px 0px;
+  grid-auto-flow: row;
+  align-items: stretch;
+  margin-bottom: 20px;
+  grid-template-areas: "date_tt date";
+}
+.r_m_date .date_tt {
+  grid-area: date_tt;
+  color: #FFFFFF;
+  background-color: #00A6E2;
+  border-top: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.r_m_date .date {
+  grid-area: date;
+  border: 1px solid #e6e6e6;
+}
+.r_m_date .date input {
+  width: 80%;
+  height: 80%;
+  border: none !important;
+  padding: 2px 8px;
+  text-align: right;
+}
+
 .grdTb2-1 {
   display: grid;
   grid-template-columns: 1fr repeat(3, 120px);

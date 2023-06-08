@@ -303,3 +303,42 @@
         }
     }
 }
+
+.r_m_date {
+    float: left;
+    display: grid;
+    grid-template-columns: 300px 200px;
+    grid-template-rows: 48px;
+    grid-auto-columns: 1fr;
+    gap: 8px 0px;
+    grid-auto-flow: row;
+    align-items: stretch;
+    margin-bottom: 20px;
+    grid-template-areas:
+        "date_tt date";
+
+    .date_tt {
+        grid-area: date_tt;
+        color: $clr_ps;
+        background-color: $clr_s;
+        border-top: 1px solid $clr_brdr;
+        border-left: 1px solid $clr_brdr;
+        border-bottom: 1px solid $clr_brdr;
+        display: flex;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .date {
+        grid-area: date;
+        border: 1px solid $clr_brdr;
+
+        input {
+            width: 80%;
+            height: 80%;
+            border: none !important;
+            padding: 2px 8px;
+            text-align: right;
+        }
+    }
+}

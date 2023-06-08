@@ -268,6 +268,41 @@
   text-align: right;
 }
 
+.r_m_date {
+  float: left;
+  display: grid;
+  grid-template-columns: 300px 200px;
+  grid-template-rows: 48px;
+  grid-auto-columns: 1fr;
+  gap: 8px 0px;
+  grid-auto-flow: row;
+  align-items: stretch;
+  margin-bottom: 20px;
+  grid-template-areas: "date_tt date";
+}
+.r_m_date .date_tt {
+  grid-area: date_tt;
+  color: #FFFFFF;
+  background-color: #00A6E2;
+  border-top: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.r_m_date .date {
+  grid-area: date;
+  border: 1px solid #e6e6e6;
+}
+.r_m_date .date input {
+  width: 80%;
+  height: 80%;
+  border: none !important;
+  padding: 2px 8px;
+  text-align: right;
+}
+
 .grdTb2-1 {
   display: grid;
   grid-template-columns: 1fr repeat(3, 120px);
@@ -1354,9 +1389,7 @@ rem {
 
 /*# sourceMappingURL=main.css.map */
 
-
 </style>
-
 <div id="MARCustomForm">
   <div id="invalidProjectMessage" style="display:none;">&nbsp;</div>
 
@@ -1380,16 +1413,27 @@ rem {
       </ul>
 
       <div class="content_tabs" id="MISPLSSR">
+
+        <div class="r_m_date">
+          <div class="date_tt" keyword="opt_c:rep_month_date">Reporting Month Date</div>
+          <div class="date">
+            <input id="j5alJRJNEJx-X66r2y4EuwS-val" name="entryfield" title="HUM-v2 - Reporting Month Date"
+              value="[ HUM-v2 - Reporting Month Date ]" />
+          </div>
+        </div>
+
         <div catoption="MbvyMNdiX1V" class="grdTb1-yn">
+
           <div class="t1" keyword="opt_c:intresp">Initiation of Response</div>
 
           <div class="l1 lv0" keyword="opt_c:tb1q1">Was this emergency response initiated within 72 hours?</div>
 
-          <div class="ans tb1rdOne" lables="Yes,No" name="tb1q1" values="yes,no"><input id="M0bJH6KcIpm-X66r2y4EuwS-val"
-              name="entryfield" title="HUM-v2 - Response initiated within 72h No"
-              value="[ HUM-v2 - Response initiated within 72h No ]" /><input id="VF4z61hxD4n-X66r2y4EuwS-val"
-              name="entryfield" title="HUM-v2 - Response initiated within 72h Yes"
-              value="[ HUM-v2 - Response initiated within 72h Yes ]" /></div>
+          <div class="ans tb1rdOne radioBtn" deid="M0bJH6KcIpm-X66r2y4EuwS-val,VF4z61hxD4n-X66r2y4EuwS-val"
+            labels="radio_Yes,radio_No" trueonly="true">&nbsp;</div>
+
+          <div style="display:none"><input id="M0bJH6KcIpm-X66r2y4EuwS-val" name="entryfield" title="" value="" />
+            <input id="VF4z61hxD4n-X66r2y4EuwS-val" name="entryfield" title="" value="" />
+          </div>
         </div>
 
         <div catoption="MbvyMNdiX1V" class="grdTb1-yn">
@@ -1398,12 +1442,12 @@ rem {
           <div class="l1 lv0" keyword="opt_c:tb1q2">Was this response designed and implemented in partnership with
             groups focused on marginalized communities?</div>
 
-          <div class="ans tb1rdTwo" lables="Yes,No" name="tb1q2" values="yes,no"><input id="usahSAl43LG-X66r2y4EuwS-val"
-              name="entryfield" title="HUM-v2 - Partnership - Yes, response partner marg. comm."
-              value="[ HUM-v2 - Partnership - Yes, response partner marg. comm. ]" /><input
-              id="iQ75t1nXhRz-X66r2y4EuwS-val" name="entryfield"
-              title="HUM-v2 - Partnership - No response partner marg. Comm"
-              value="[ HUM-v2 - Partnership - No response partner marg. Comm ]" /></div>
+          <div class="ans tb1rdTwo radioBtn" deid="usahSAl43LG-X66r2y4EuwS-val,iQ75t1nXhRz-X66r2y4EuwS-val"
+            labels="radio_Yes,radio_No" trueonly="true">&nbsp;</div>
+
+          <div style="display:none"><input id="usahSAl43LG-X66r2y4EuwS-val" name="entryfield" title="" value="" />
+            <input id="iQ75t1nXhRz-X66r2y4EuwS-val" name="entryfield" title="" value="" />
+          </div>
         </div>
 
         <div class="grdTb1-1">
@@ -1415,53 +1459,33 @@ rem {
 
           <div class="l1" keyword="opt_c:hcc">Health Cluster / Coordination</div>
 
-          <div class="l1c2"><input id="njTbJ7L8Ebx-RE9HFOAzsm5-val" name="entryfield"
-              title="HUM-v2 - Cluster coord. mettings - Health C. Coord. Sub-National"
-              value="[ HUM-v2 - Cluster coord. mettings - Health C. Coord. Sub-National ]" /></div>
+          <div class="l1c2"><input id="njTbJ7L8Ebx-RE9HFOAzsm5-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l1c3"><input id="njTbJ7L8Ebx-pTR9wRwLrrg-val" name="entryfield"
-              title="HUM-v2 - Cluster coord. mettings - Health C. Coord. National"
-              value="[ HUM-v2 - Cluster coord. mettings - Health C. Coord. National ]" /></div>
+          <div class="l1c3"><input id="njTbJ7L8Ebx-pTR9wRwLrrg-val" name="entryfield" title="" value="" /></div>
 
           <div class="l2" keyword="opt_c:srhscc">SRH Sub-Cluster / Coordination</div>
 
-          <div class="l2c2"><input id="bQs1WxxFUJj-RE9HFOAzsm5-val" name="entryfield"
-              title="HUM-v2 - Cluster coord. mettings - SRH sub Cluster Coord. Sub-National"
-              value="[ HUM-v2 - Cluster coord. mettings - SRH sub Cluster Coord. Sub-National ]" /></div>
+          <div class="l2c2"><input id="bQs1WxxFUJj-RE9HFOAzsm5-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l2c3"><input id="bQs1WxxFUJj-pTR9wRwLrrg-val" name="entryfield"
-              title="HUM-v2 - Cluster coord. mettings - SRH sub Cluster Coord. National"
-              value="[ HUM-v2 - Cluster coord. mettings - SRH sub Cluster Coord. National ]" /></div>
+          <div class="l2c3"><input id="bQs1WxxFUJj-pTR9wRwLrrg-val" name="entryfield" title="" value="" /></div>
 
           <div class="l3" keyword="opt_c:pcc">Protection Cluster / Coordination</div>
 
-          <div class="l3c2"><input id="IP4hIt6iACQ-RE9HFOAzsm5-val" name="entryfield"
-              title="HUM-v2 - Cluster coord. mettings - Protec. cluster Coord. Sub-National"
-              value="[ HUM-v2 - Cluster coord. mettings - Protec. cluster Coord. Sub-National ]" /></div>
+          <div class="l3c2"><input id="IP4hIt6iACQ-RE9HFOAzsm5-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l3c3"><input id="IP4hIt6iACQ-pTR9wRwLrrg-val" name="entryfield"
-              title="HUM-v2 - Cluster coord. mettings - Protec. cluster Coord. National"
-              value="[ HUM-v2 - Cluster coord. mettings - Protec. cluster Coord. National ]" /></div>
+          <div class="l3c3"><input id="IP4hIt6iACQ-pTR9wRwLrrg-val" name="entryfield" title="" value="" /></div>
 
           <div class="l4" keyword="opt_c:sgbvcc">SGBV Cluster / Coordination</div>
 
-          <div class="l4c2"><input id="SdbwECVk3ix-RE9HFOAzsm5-val" name="entryfield"
-              title="HUM-v2 - Cluster coord. mettings - SGBV Cluster Coord. Sub-National"
-              value="[ HUM-v2 - Cluster coord. mettings - SGBV Cluster Coord. Sub-National ]" /></div>
+          <div class="l4c2"><input id="SdbwECVk3ix-RE9HFOAzsm5-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l4c3"><input id="SdbwECVk3ix-pTR9wRwLrrg-val" name="entryfield"
-              title="HUM-v2 - Cluster coord. mettings - SGBV Cluster Coord. National"
-              value="[ HUM-v2 - Cluster coord. mettings - SGBV Cluster Coord. National ]" /></div>
+          <div class="l4c3"><input id="SdbwECVk3ix-pTR9wRwLrrg-val" name="entryfield" title="" value="" /></div>
 
           <div class="l5" keyword="opt_c:othcm">Other Coordination Meeting</div>
 
-          <div class="l5c2"><input id="rqaYjtxgYSJ-RE9HFOAzsm5-val" name="entryfield"
-              title="HUM-v2 - Cluster coord. mettings - Other Coord. Meeting Sub-National"
-              value="[ HUM-v2 - Cluster coord. mettings - Other Coord. Meeting Sub-National ]" /></div>
+          <div class="l5c2"><input id="rqaYjtxgYSJ-RE9HFOAzsm5-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l5c3"><input id="rqaYjtxgYSJ-pTR9wRwLrrg-val" name="entryfield"
-              title="HUM-v2 - Cluster coord. mettings - Other Coord. Meeting National"
-              value="[ HUM-v2 - Cluster coord. mettings - Other Coord. Meeting National ]" /></div>
+          <div class="l5c3"><input id="rqaYjtxgYSJ-pTR9wRwLrrg-val" name="entryfield" title="" value="" /></div>
         </div>
       </div>
 
@@ -1480,34 +1504,22 @@ rem {
           <div class="l1" keyword="opt_c:tnmastaff">Total number of MA staff and volunteers deployed in this response
           </div>
 
-          <div class="l1c2"><input id="VGOBcEQdEn9-q9VL2W6QNMA-val" name="entryfield"
-              title="HUM-v2 - HHRR - Num MA staff volunteers deployed Male Gender"
-              value="[ HUM-v2 - HHRR - Num MA staff volunteers deployed Male Gender ]" /></div>
+          <div class="l1c2"><input id="VGOBcEQdEn9-q9VL2W6QNMA-val" name="entryfield" title="" value="" /></div>
 
           <p>&nbsp;</p>
 
-          <div class="l1c3"><input id="VGOBcEQdEn9-nuDwlhP48uT-val" name="entryfield"
-              title="HUM-v2 - HHRR - Num MA staff volunteers deployed Female Gender"
-              value="[ HUM-v2 - HHRR - Num MA staff volunteers deployed Female Gender ]" /></div>
+          <div class="l1c3"><input id="VGOBcEQdEn9-nuDwlhP48uT-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l1c4"><input id="VGOBcEQdEn9-JBexFBUfN0n-val" name="entryfield"
-              title="HUM-v2 - HHRR - Num MA staff volunteers deployed Non-Binary"
-              value="[ HUM-v2 - HHRR - Num MA staff volunteers deployed Non-Binary ]" /></div>
+          <div class="l1c4"><input id="VGOBcEQdEn9-JBexFBUfN0n-val" name="entryfield" title="" value="" /></div>
 
           <div class="l2" keyword="opt_c:tnmastaffsgbv">Total number of MA staff and volunteers who have received ANY
             training on SGBV in the last 2 years</div>
 
-          <div class="l2c2"><input id="cOMJiEdRoyo-q9VL2W6QNMA-val" name="entryfield"
-              title="HUM-v2 - HHRR - Num MA staff volunteers trained SGBV Male Gender"
-              value="[ HUM-v2 - HHRR - Num MA staff volunteers trained SGBV Male Gender ]" /></div>
+          <div class="l2c2"><input id="cOMJiEdRoyo-q9VL2W6QNMA-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l2c3"><input id="cOMJiEdRoyo-nuDwlhP48uT-val" name="entryfield"
-              title="HUM-v2 - HHRR - Num MA staff volunteers trained SGBV Female Gender"
-              value="[ HUM-v2 - HHRR - Num MA staff volunteers trained SGBV Female Gender ]" /></div>
+          <div class="l2c3"><input id="cOMJiEdRoyo-nuDwlhP48uT-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l2c4"><input id="cOMJiEdRoyo-JBexFBUfN0n-val" name="entryfield"
-              title="HUM-v2 - HHRR - Num MA staff volunteers trained SGBV Non-Binary"
-              value="[ HUM-v2 - HHRR - Num MA staff volunteers trained SGBV Non-Binary ]" /></div>
+          <div class="l2c4"><input id="cOMJiEdRoyo-JBexFBUfN0n-val" name="entryfield" title="" value="" /></div>
         </div>
 
         <div class="grdTb2-2">
@@ -1522,59 +1534,35 @@ rem {
 
           <div class="l1" keyword="opt_c:gbvft">GBV Fundamentals Training</div>
 
-          <div class="l1c2"><input id="RsT2BlvaePH-q9VL2W6QNMA-val" name="entryfield"
-              title="HUM-v2 - Staff volunteers trained - GBV Fundamentals Male Gender"
-              value="[ HUM-v2 - Staff volunteers trained - GBV Fundamentals Male Gender ]" /></div>
+          <div class="l1c2"><input id="RsT2BlvaePH-q9VL2W6QNMA-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l1c3"><input id="RsT2BlvaePH-nuDwlhP48uT-val" name="entryfield"
-              title="HUM-v2 - Staff volunteers trained - GBV Fundamentals Female Gender"
-              value="[ HUM-v2 - Staff volunteers trained - GBV Fundamentals Female Gender ]" /></div>
+          <div class="l1c3"><input id="RsT2BlvaePH-nuDwlhP48uT-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l1c4"><input id="wI4GcgTh2sI-JBexFBUfN0n-val" name="entryfield"
-              title="HUM-v2 - Staff volunteers trained - CMR Non-Binary"
-              value="[ HUM-v2 - Staff volunteers trained - CMR Non-Binary ]" /></div>
+          <div class="l1c4"><input id="RsT2BlvaePH-JBexFBUfN0n-val" name="entryfield" title="" value="" /></div>
 
           <div class="l2" keyword="opt_c:livestr">LIVES Training</div>
 
-          <div class="l2c2"><input id="WWT2q6JaEAG-q9VL2W6QNMA-val" name="entryfield"
-              title="HUM-v2 - Staff volunteers trained - Lives Male Gender"
-              value="[ HUM-v2 - Staff volunteers trained - Lives Male Gender ]" /></div>
+          <div class="l2c2"><input id="WWT2q6JaEAG-q9VL2W6QNMA-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l2c3"><input id="WWT2q6JaEAG-nuDwlhP48uT-val" name="entryfield"
-              title="HUM-v2 - Staff volunteers trained - Lives Female Gender"
-              value="[ HUM-v2 - Staff volunteers trained - Lives Female Gender ]" /></div>
+          <div class="l2c3"><input id="WWT2q6JaEAG-nuDwlhP48uT-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l2c4"><input id="WWT2q6JaEAG-JBexFBUfN0n-val" name="entryfield"
-              title="HUM-v2 - Staff volunteers trained - Lives Non-Binary"
-              value="[ HUM-v2 - Staff volunteers trained - Lives Non-Binary ]" /></div>
+          <div class="l2c4"><input id="WWT2q6JaEAG-JBexFBUfN0n-val" name="entryfield" title="" value="" /></div>
 
           <div class="l3" keyword="opt_c:cmrtr">CMR Training</div>
 
-          <div class="l3c2"><input id="wI4GcgTh2sI-q9VL2W6QNMA-val" name="entryfield"
-              title="HUM-v2 - Staff volunteers trained - CMR Male Gender"
-              value="[ HUM-v2 - Staff volunteers trained - CMR Male Gender ]" /></div>
+          <div class="l3c2"><input id="wI4GcgTh2sI-q9VL2W6QNMA-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l3c3"><input id="wI4GcgTh2sI-nuDwlhP48uT-val" name="entryfield"
-              title="HUM-v2 - Staff volunteers trained - CMR Female Gender"
-              value="[ HUM-v2 - Staff volunteers trained - CMR Female Gender ]" /></div>
+          <div class="l3c3"><input id="wI4GcgTh2sI-nuDwlhP48uT-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l3c4"><input id="RsT2BlvaePH-JBexFBUfN0n-val" name="entryfield"
-              title="HUM-v2 - Staff volunteers trained - GBV Fundamentals Non-Binary"
-              value="[ HUM-v2 - Staff volunteers trained - GBV Fundamentals Non-Binary ]" /></div>
+          <div class="l3c4"><input id="wI4GcgTh2sI-JBexFBUfN0n-val" name="entryfield" title="" value="" /></div>
 
           <div class="l4" keyword="opt_c:othsgbvtr">Other SGBV Training</div>
 
-          <div class="l4c2"><input id="woO51wRegBR-q9VL2W6QNMA-val" name="entryfield"
-              title="HUM-v2 - Staff volunteers trained - Other SGBV Male Gender"
-              value="[ HUM-v2 - Staff volunteers trained - Other SGBV Male Gender ]" /></div>
+          <div class="l4c2"><input id="woO51wRegBR-q9VL2W6QNMA-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l4c3"><input id="woO51wRegBR-nuDwlhP48uT-val" name="entryfield"
-              title="HUM-v2 - Staff volunteers trained - Other SGBV Female Gender"
-              value="[ HUM-v2 - Staff volunteers trained - Other SGBV Female Gender ]" /></div>
+          <div class="l4c3"><input id="woO51wRegBR-nuDwlhP48uT-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l4c4"><input id="woO51wRegBR-JBexFBUfN0n-val" name="entryfield"
-              title="HUM-v2 - Staff volunteers trained - Other SGBV Non-Binary"
-              value="[ HUM-v2 - Staff volunteers trained - Other SGBV Non-Binary ]" /></div>
+          <div class="l4c4"><input id="woO51wRegBR-JBexFBUfN0n-val" name="entryfield" title="" value="" /></div>
         </div>
       </div>
 
@@ -1587,11 +1575,12 @@ rem {
 
           <p>&nbsp;</p>
 
-          <div class="ans tb3rdOne" lables="Yes,No" name="tb3q1" values="yes,no"><input id="aiovZkwTH8p-X66r2y4EuwS-val"
-              name="entryfield" title="HUM-v2 - EmONC- Yes, MA supports EmONC serv."
-              value="[ HUM-v2 - EmONC- Yes, MA supports EmONC serv. ]" /><input id="N6myu03rBhA-X66r2y4EuwS-val"
-              name="entryfield" title="HUM-v2 - EmONC - No support for EmONC serv."
-              value="[ HUM-v2 - EmONC - No support for EmONC serv. ]" /></div>
+          <div class="ans tb3rdOne radioBtn" deid="aiovZkwTH8p-X66r2y4EuwS-val,N6myu03rBhA-X66r2y4EuwS-val"
+            labels="radio_Yes,radio_No" trueonly="true">&nbsp;</div>
+
+          <div style="display:none"><input id="aiovZkwTH8p-X66r2y4EuwS-val" name="entryfield" title="" value="" />
+            <input id="N6myu03rBhA-X66r2y4EuwS-val" name="entryfield" title="" value="" />
+          </div>
         </div>
       </div>
 
@@ -1609,101 +1598,59 @@ rem {
 
           <div class="l1" keyword="opt_c:hctr">Humanitarian Coordination Training</div>
 
-          <div class="l1c2"><input id="moY60mTFMdE-q9VL2W6QNMA-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - Hum Coord Male Gender"
-              value="[ HUM-v2 - # ext. Patners train - Hum Coord Male Gender ]" /></div>
+          <div class="l1c2"><input id="moY60mTFMdE-q9VL2W6QNMA-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l1c3"><input id="moY60mTFMdE-nuDwlhP48uT-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - Hum Coord Female Gender"
-              value="[ HUM-v2 - # ext. Patners train - Hum Coord Female Gender ]" /></div>
+          <div class="l1c3"><input id="moY60mTFMdE-nuDwlhP48uT-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l1c4"><input id="moY60mTFMdE-JBexFBUfN0n-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - Hum Coord Non-Binary"
-              value="[ HUM-v2 - # ext. Patners train - Hum Coord Non-Binary ]" /></div>
+          <div class="l1c4"><input id="moY60mTFMdE-JBexFBUfN0n-val" name="entryfield" title="" value="" /></div>
 
           <div class="l2" keyword="opt_c:sgbvtr">SGBV Training</div>
 
-          <div class="l2c2"><input id="mT8WBXgOv1E-q9VL2W6QNMA-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - SGBV Male Gender"
-              value="[ HUM-v2 - # ext. Patners train - SGBV Male Gender ]" /></div>
+          <div class="l2c2"><input id="mT8WBXgOv1E-q9VL2W6QNMA-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l2c3"><input id="mT8WBXgOv1E-nuDwlhP48uT-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - SGBV Female Gender"
-              value="[ HUM-v2 - # ext. Patners train - SGBV Female Gender ]" /></div>
+          <div class="l2c3"><input id="mT8WBXgOv1E-nuDwlhP48uT-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l2c4"><input id="mT8WBXgOv1E-JBexFBUfN0n-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - SGBV Non-Binary"
-              value="[ HUM-v2 - # ext. Patners train - SGBV Non-Binary ]" /></div>
+          <div class="l2c4"><input id="mT8WBXgOv1E-JBexFBUfN0n-val" name="entryfield" title="" value="" /></div>
 
           <div class="l3" keyword="opt_c:stihivtr">STI / HIV Training</div>
 
-          <div class="l3c2"><input id="ESlwBSuvaG4-q9VL2W6QNMA-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - STI/HIV Male Gender"
-              value="[ HUM-v2 - # ext. Patners train - STI/HIV Male Gender ]" /></div>
+          <div class="l3c2"><input id="ESlwBSuvaG4-q9VL2W6QNMA-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l3c3"><input id="ESlwBSuvaG4-nuDwlhP48uT-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - STI/HIV Female Gender"
-              value="[ HUM-v2 - # ext. Patners train - STI/HIV Female Gender ]" /></div>
+          <div class="l3c3"><input id="ESlwBSuvaG4-nuDwlhP48uT-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l3c4"><input id="ESlwBSuvaG4-JBexFBUfN0n-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - STI/HIV Non-Binary"
-              value="[ HUM-v2 - # ext. Patners train - STI/HIV Non-Binary ]" /></div>
+          <div class="l3c4"><input id="ESlwBSuvaG4-JBexFBUfN0n-val" name="entryfield" title="" value="" /></div>
 
           <div class="l4" keyword="opt_c:emoncsdtr">EmONC / Safe Delivery Training</div>
 
-          <div class="l4c2"><input id="ugkSABD47ln-q9VL2W6QNMA-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - EmONC / safe dev. Male Gender"
-              value="[ HUM-v2 - # ext. Patners train - EmONC / safe dev. Male Gender ]" /></div>
+          <div class="l4c2"><input id="ugkSABD47ln-q9VL2W6QNMA-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l4c3"><input id="ugkSABD47ln-nuDwlhP48uT-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - EmONC / safe dev. Female Gender"
-              value="[ HUM-v2 - # ext. Patners train - EmONC / safe dev. Female Gender ]" /></div>
+          <div class="l4c3"><input id="ugkSABD47ln-nuDwlhP48uT-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l4c4"><input id="ugkSABD47ln-JBexFBUfN0n-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - EmONC / safe dev. Non-Binary"
-              value="[ HUM-v2 - # ext. Patners train - EmONC / safe dev. Non-Binary ]" /></div>
+          <div class="l4c4"><input id="ugkSABD47ln-JBexFBUfN0n-val" name="entryfield" title="" value="" /></div>
 
           <div class="l5" keyword="opt_c:cntrtr">Contraception Training</div>
 
-          <div class="l5c2"><input id="f9twwV3Fxcr-q9VL2W6QNMA-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - Contraception Male Gender"
-              value="[ HUM-v2 - # ext. Patners train - Contraception Male Gender ]" /></div>
+          <div class="l5c2"><input id="f9twwV3Fxcr-q9VL2W6QNMA-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l5c3"><input id="f9twwV3Fxcr-nuDwlhP48uT-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - Contraception Female Gender"
-              value="[ HUM-v2 - # ext. Patners train - Contraception Female Gender ]" /></div>
+          <div class="l5c3"><input id="f9twwV3Fxcr-nuDwlhP48uT-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l5c4"><input id="f9twwV3Fxcr-JBexFBUfN0n-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - Contraception Non-Binary"
-              value="[ HUM-v2 - # ext. Patners train - Contraception Non-Binary ]" /></div>
+          <div class="l5c4"><input id="f9twwV3Fxcr-JBexFBUfN0n-val" name="entryfield" title="" value="" /></div>
 
           <div class="l6" keyword="opt_c:cactr">Comprehensive Abortion Care Training</div>
 
-          <div class="l6c2"><input id="poUC8IDbWfg-q9VL2W6QNMA-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - Compreh. AC Male Gender"
-              value="[ HUM-v2 - # ext. Patners train - Compreh. AC Male Gender ]" /></div>
+          <div class="l6c2"><input id="poUC8IDbWfg-q9VL2W6QNMA-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l6c3"><input id="poUC8IDbWfg-nuDwlhP48uT-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - Compreh. AC Female Gender"
-              value="[ HUM-v2 - # ext. Patners train - Compreh. AC Female Gender ]" /></div>
+          <div class="l6c3"><input id="poUC8IDbWfg-nuDwlhP48uT-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l6c4"><input id="poUC8IDbWfg-JBexFBUfN0n-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - Compreh. AC Non-Binary"
-              value="[ HUM-v2 - # ext. Patners train - Compreh. AC Non-Binary ]" /></div>
+          <div class="l6c4"><input id="poUC8IDbWfg-JBexFBUfN0n-val" name="entryfield" title="" value="" /></div>
 
           <div class="l7" keyword="opt_c:othsrhtr">Other SRH Training</div>
 
-          <div class="l7c2"><input id="cN15qQWlVlK-q9VL2W6QNMA-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - Other SRH Male Gender"
-              value="[ HUM-v2 - # ext. Patners train - Other SRH Male Gender ]" /></div>
+          <div class="l7c2"><input id="cN15qQWlVlK-q9VL2W6QNMA-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l7c3"><input id="cN15qQWlVlK-nuDwlhP48uT-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - Other SRH Female Gender"
-              value="[ HUM-v2 - # ext. Patners train - Other SRH Female Gender ]" /></div>
+          <div class="l7c3"><input id="cN15qQWlVlK-nuDwlhP48uT-val" name="entryfield" title="" value="" /></div>
 
-          <div class="l7c4"><input id="cN15qQWlVlK-JBexFBUfN0n-val" name="entryfield"
-              title="HUM-v2 - # ext. Patners train - Other SRH Non-Binary"
-              value="[ HUM-v2 - # ext. Patners train - Other SRH Non-Binary ]" /></div>
+          <div class="l7c4"><input id="cN15qQWlVlK-JBexFBUfN0n-val" name="entryfield" title="" value="" /></div>
         </div>
 
         <div class="grdTb4-2">
@@ -1714,9 +1661,7 @@ rem {
           <div class="l1" keyword="opt_c:nsifcsrhsendresp">Number of sites identified for future delivery of
             comprehensive SRH Services after the end of the response</div>
 
-          <div class="l1c2"><input id="wJ80UqvWIoQ-X66r2y4EuwS-val" name="entryfield"
-              title="HUM-v2 - Num sites IDed for comprehensive SRH"
-              value="[ HUM-v2 - Num sites IDed for comprehensive SRH ]" /></div>
+          <div class="l1c2"><input id="wJ80UqvWIoQ-X66r2y4EuwS-val" name="entryfield" title="" value="" /></div>
         </div>
 
         <div class="grdTb4-yn">
@@ -1724,16 +1669,17 @@ rem {
 
           <div class="l1 lv0" keyword="opt_c:tb4q1">Was a transition plan developed for the end of this response?</div>
 
-          <div class="ans tb4rdOne" lables="Yes,No" name="tb4q1" values="yes,no"><input id="iijWYbz8EjY-X66r2y4EuwS-val"
-              name="entryfield" title="HUM-v2 - Exit Strag. - Yes, exit strag. Developed"
-              value="[ HUM-v2 - Exit Strag. - Yes, exit strag. Developed ]" /><input id="UbWWsiS37q3-X66r2y4EuwS-val"
-              name="entryfield" title="HUM-v2 - Exit Strag. - No exit strag.developed"
-              value="[ HUM-v2 - Exit Strag. - No exit strag.developed ]" /></div>
+          <div class="ans tb4rdOne radioBtn" deid="iijWYbz8EjY-X66r2y4EuwS-val,UbWWsiS37q3-X66r2y4EuwS-val"
+            labels="radio_Yes,radio_No" trueonly="true">&nbsp;</div>
+
+          <div style="display:none"><input id="iijWYbz8EjY-X66r2y4EuwS-val" name="entryfield" title="" value="" />
+            <input id="UbWWsiS37q3-X66r2y4EuwS-val" name="entryfield" title="" value="" />
+          </div>
         </div>
       </div>
 
-      <div catoption="MbvyMNdiX1V" class="content_tabs" id="PPA">
-        <div class="grdTb5-1" id="PoPA">
+      <div class="content_tabs" id="PPA">
+        <div catoption="MbvyMNdiX1V" class="grdTb5-1" id="PoPA">
           <div class="title" keyword="opt_c:clnts">Client Satisfaction</div>
 
           <div class="t1" keyword="opt_c:value">Value</div>
@@ -1741,169 +1687,242 @@ rem {
           <div class="l1" keyword="opt_c:wpcwrs">What percentage of clients reported that they would recommend services
             to other? (Net-promoter score)</div>
 
-          <div class="l1c2"><input id="ftbMhMvC9WL-X66r2y4EuwS-val" name="entryfield"
-              title="HUM-v2 - Client Satisfaction - % client report recom serv"
-              value="[ HUM-v2 - Client Satisfaction - % client report recom serv ]" /></div>
+          <div class="l1c2"><input id="ftbMhMvC9WL-X66r2y4EuwS-val" name="entryfield" title="" value="" /></div>
+
+          <div class="l1c2">&nbsp;</div>
+
+          <div class="l1c2">&nbsp;</div>
+
+          <div class="l1c2">&nbsp;</div>
+
+          <div class="l1c2">&nbsp;</div>
+
+          <div class="l1c2">&nbsp;</div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <script>
   $(document).ready(function () {
-
     $("body").on("focus", "input", function (event) {
       $(this).attr('autocomplete', 'off')
-    });
-
-    $('.custom_tab li').click(function (e) {
-      tab_selected = $(this).find('a').attr('href');
-      console.log("Paso  -->>>")
-      switch (tab_selected) {
-        case '#MISPLSSR':
-          $(this).attr('tabindex', '0');
-          $(this).addClass('ui-state-hover');
-          $(this).addClass('ui-tabs-active');
-          $(this).addClass('ui-state-active');
-          $(this).attr('aria-selected', 'true');
-          $(this).attr('aria-expanded', 'true');
-          $('#MISPLSSR').attr('aria-hidden', 'false');
-          $('#MISPLSSR').css({ 'display': 'block' });
-          break;
-        case '#SVPP':
-          $(this).attr('tabindex', '0');
-          $(this).addClass('ui-state-hover');
-          $(this).addClass('ui-tabs-active');
-          $(this).addClass('ui-state-active');
-          $(this).attr('aria-selected', 'true');
-          $(this).attr('aria-expanded', 'true');
-          $('#SVPP').attr('aria-hidden', 'false');
-          $('#SVPP').css({ 'display': 'block' });
-          break;
-        case '#MNS':
-          $(this).attr('tabindex', '0');
-          $(this).addClass('ui-state-hover');
-          $(this).addClass('ui-tabs-active');
-          $(this).addClass('ui-state-active');
-          $(this).attr('aria-selected', 'true');
-          $(this).attr('aria-expanded', 'true');
-          $('#MNS').attr('aria-hidden', 'false');
-          $('#MNS').css({ 'display': 'block' });
-          break;
-        case '#SRHP':
-          $(this).attr('tabindex', '0');
-          $(this).addClass('ui-state-hover');
-          $(this).addClass('ui-tabs-active');
-          $(this).addClass('ui-state-active');
-          $(this).attr('aria-selected', 'true');
-          $(this).attr('aria-expanded', 'true');
-          $('#SRHP').attr('aria-hidden', 'false');
-          $('#SRHP').css({ 'display': 'block' });
-          break;
-        case '#PPA':
-          $(this).attr('tabindex', '0');
-          $(this).addClass('ui-state-hover');
-          $(this).addClass('ui-tabs-active');
-          $(this).addClass('ui-state-active');
-          $(this).attr('aria-selected', 'true');
-          $(this).attr('aria-expanded', 'true');
-          $('#PPA').attr('aria-hidden', 'false');
-          $('#PPA').css({ 'display': 'block' });
-          $('#PoPA').css({ 'visibility': 'visible' });
-          break;
-      }
     });
   });
 
   function RenderRadioBtnTags() {
     var me = this;
 
+    me.selectedPeriodIdTag = $("#selectedPeriodId");
+    me.selectedCatOptionTag = $("#category-GpsXo2XHyrI");
+    me.selectedDataSetIdTag = $("#selectedDataSetId");
+
+    me.tabsTag = $("#MARCustomForm_Content");
+
     me.init = function () {
       me.renderRadioBtnTags();
     }
 
-
     me.renderRadioBtnTags = function () {
-      // <div class="radioBtn" name="q1" values="oneyes,oneno" lables="Yes,No"></div>
-      // <input name="q1" type="radio" value="" /> <label for="Yes">Yes</label> <input name="q1" type="radio" value="" /> <label for="No">No</label></div>
-      $(".tb1rdOne").each(function () {
-        $(this).html("");
+      me.tabsTag.find(".radioBtn").each(function () {
+        var radioDivTag = $(this);
+        radioDivTag.html("");
 
-        var name = $(this).attr("name");
-        var values = $(this).attr("values").split(",");
-        var lables = $(this).attr("lables").split(",");
-        for (var i = 0; i < values.length; i++) {
-          let inputTag = $("<input name='" + name + "' type='radio' value='" + values[i] + "'/>");
+        var deIdList = radioDivTag.attr("deId").split(",");
+        var labels = radioDivTag.attr("labels");
+        labels = (labels) ? labels.split(",") : undefined;
 
-          inputTag.click(function () {
-            me.rbselected(inputTag.val());
-          });
+        var trueOnly = radioDivTag.attr("trueOnly");
+        for (var i = 0; i < deIdList.length; i++) {
+          const deId = deIdList[i];
+          if (trueOnly == undefined) {
+            me.createRadioBtn(radioDivTag, deId, "radio_Yes", "true");
+            me.createRadioBtn(radioDivTag, deId, "radio_No", "false");
+          }
+          else if (trueOnly == "true") {
+            // const divTag = $("<div class='ansx'></div>");
+            // radioDivTag.append(divTag);
 
-          $(this).append(inputTag);
-          $(this).append("<label for='" + lables[i] + "'>" + lables[i] + "</label>");
+            var label = "";
+            if (labels == undefined) {
+              var key = deId.split("-")[0];
+              label = me.tabsTag.find("#" + key + "-dataelement").html();
+            }
+            else {
+              label = labels[i];
+              label = MARFormTranslation.translate(key, label == "radio_Yes" ? "Yes" : "No");
+            }
+            me.createRadioBtn(radioDivTag, deId, label, "true");
+          }
         }
-      })
 
-      $(".tb1rdTwo").each(function () {
-        $(this).html("");
-
-        var name = $(this).attr("name");
-        var values = $(this).attr("values").split(",");
-        var lables = $(this).attr("lables").split(",");
-        for (var i = 0; i < values.length; i++) {
-          let inputTag = $("<input name='" + name + "' type='radio' value='" + values[i] + "'/>");
-
-          inputTag.click(function () {
-            me.rbselected(inputTag.val());
-          });
-
-          $(this).append(inputTag);
-          $(this).append("<label for='" + lables[i] + "'>" + lables[i] + "</label>");
-        }
-      })
-
-      $(".tb3rdOne").each(function () {
-        $(this).html("");
-
-        var name = $(this).attr("name");
-        var values = $(this).attr("values").split(",");
-        var lables = $(this).attr("lables").split(",");
-        for (var i = 0; i < values.length; i++) {
-          let inputTag = $("<input name='" + name + "' type='radio' value='" + values[i] + "'/>");
-
-          inputTag.click(function () {
-            me.rbselected(inputTag.val());
-          });
-
-          $(this).append(inputTag);
-          $(this).append("<label for='" + lables[i] + "'>" + lables[i] + "</label>");
-        }
-      })
-
-      $(".tb4rdOne").each(function () {
-        $(this).html("");
-
-        var name = $(this).attr("name");
-        var values = $(this).attr("values").split(",");
-        var lables = $(this).attr("lables").split(",");
-        for (var i = 0; i < values.length; i++) {
-          let inputTag = $("<input name='" + name + "' type='radio' value='" + values[i] + "'/>");
-
-          inputTag.click(function () {
-            me.rbselected(inputTag.val());
-          });
-
-          $(this).append(inputTag);
-          $(this).append("<label for='" + lables[i] + "'>" + lables[i] + "</label>");
-        }
       })
     }
 
-    me.rbselected = function (rbsctd) { }
+    me.createRadioBtn = function (radioDivTag, deId, translatedName, value) {
+
+      var realSelectedValue = me.getRealSelectedInputTagVal(deId);
+      var inputTag = $("<input name='radio_" + deId + "' type='radio' value='" + value + "' />");
+      inputTag.prop("checked", (realSelectedValue == value));
+
+      inputTag.click(function () {
+
+        // var deId = radioDivTag.attr("deId");
+        var selected = eval(inputTag.val());
+        var deInputTag = me.tabsTag.find("[id='" + deId + "'][value='" + selected + "']");
+        deInputTag = (deInputTag.length > 0) ? deInputTag : me.tabsTag.find("[id='" + deId + "']"); // For TRUE_ONLY fields, No value is set for the real field
+        if (!deInputTag.prop("checked")) // Only set "checked" if the realTag is "unchecked"
+        {
+          // When the "Click" event is called, the checked will be changed from "checked" to "unchecked" 
+          // and "unchecked" Dta value is saved
+          deInputTag.click();
+        }
+
+
+        // me.runToggleLogic(deId);
+        me.runPopulateValueLogic(deId);
+
+        // deInputTag.prop("checked", true).click(); // To save data value
+      });
+
+      radioDivTag.append(inputTag);
+      radioDivTag.append("<label>" + translatedName + "</label>");
+
+      // Set 'checked' prop if any
+      var realInputTag = me.tabsTag.find("#" + deId + ":checked");
+      if (realInputTag.length > 0) {
+        var realInputValue = realInputTag.val();
+        me.tabsTag.find("[name='radio_" + deId + "'][value='" + realInputValue + "']").prop("checked", true);
+      }
+
+      // me.runToggleLogic(deId); // Show/hide fields in initilization
+    }
+
+    // me.runToggleLogic = function (deId) {
+
+    // 	// show / Hide fields
+    // 	me.tabsTag.find("[showCondition]").each(function () {
+    // 		// var count = 0;
+
+    // 		var tagField = $(this);
+    // 		var showCondition = tagField.attr("showCondition");
+    // 		if (showCondition == '{"MbgfjJryaZq-X66r2y4EuwS-val":["true"], "lSfjA6CzZnN-X66r2y4EuwS-val":["false"]}') {
+    // 			var fasdfas = 0;
+    // 		}
+    // 		showCondition = JSON.parse(showCondition);
+
+    // 		var condDeIdList = Object.keys(showCondition);
+    // 		if (condDeIdList.indexOf(deId) >= 0) {
+    // 			var count = 0;
+    // 			for (var i = 0; i < condDeIdList.length; i++) {
+    // 				const condDeId = condDeIdList[i];
+    // 				var condDeValues = showCondition[condDeIdList[i]];
+    // 				// var foundCondInputTag = $("[name=radio_" + condDeId + "]:checked");
+    // 				var foundCondInputTag = $("[id=" + condDeId + "]:checked");
+    // 				if (foundCondInputTag.length > 0) {
+    // 					var inputTagVal = foundCondInputTag.val();
+    // 					if (condDeValues.indexOf(inputTagVal) >= 0) {
+    // 						count++;
+    // 					}
+    // 				}
+    // 			}
+
+    // 			if (count == condDeIdList.length) {
+    // 				tagField.show();
+    // 			}
+    // 			else {
+    // 				// Remove ALL input data values if any
+    // 				tagField.find("input[id]").each(function () {
+    // 					var itemTag = $(this);
+    // 					if (((itemTag.attr("type") == "radio" || itemTag.attr("type") == "checkbox") && itemTag.prop("checked"))
+    // 						|| (itemTag.attr("type") == 'text' && itemTag.val() != "")) {
+    // 						itemTag.prop("checked", false);
+    // 						var key = itemTag.attr("id").split("-")[0];
+    // 						me.tabsTag.find("[name=radio_" + itemTag.attr("id") + "]").prop("checked", false);
+    // 						if (itemTag.attr("type") == 'text') {
+    // 							itemTag.val("");
+    // 						}
+    // 						else {
+    // 							itemTag.prop("checked", false);
+    // 						}
+    // 						me.removeDataValue(key);
+    // 					}
+    // 				})
+    // 				tagField.hide(); // Hide the INPUT fields
+    // 			}
+    // 		}
+    // 	});
+
+    // }
+
+    me.runPopulateValueLogic = function (deId) {
+      // Allow ONLY ONE value for trueOnly="true" fields
+      me.tabsTag.find("[trueOnly='true']").each(function () {
+        var radioDivTag = $(this);
+        var trueOnlyDeIdList = radioDivTag.attr("deId").split(",");
+        if (trueOnlyDeIdList.indexOf(deId) >= 0) {
+          for (var i = 0; i < trueOnlyDeIdList.length; i++) {
+            var trueOnlyDeId = trueOnlyDeIdList[i];
+            if (trueOnlyDeId != deId) {
+              me.tabsTag.find("[name='radio_" + trueOnlyDeId + "']").prop("checked", false);
+
+              var realInputTag = me.tabsTag.find("#" + trueOnlyDeId + "");
+              if (((realInputTag.attr("type") == "radio" || realInputTag.attr("type") == "checkbox") && realInputTag.prop("checked"))
+                || (realInputTag.attr("type") == 'text' && realInputTag.val() != "")) {
+                if (realInputTag.attr("type") == 'text') {
+                  realInputTag.val("");
+                }
+                else {
+                  realInputTag.prop("checked", false);
+                }
+
+                me.removeDataValue(trueOnlyDeId.split("-")[0]);
+              }
+            }
+
+          }
+        }
+      });
+    }
+
+    me.getRealSelectedInputTagVal = function (deId) {
+      var deInputTag = me.tabsTag.find("[id='" + deId + "']:checked");
+      var value = "";
+      if (deInputTag.length > 0) {
+        value = (deInputTag.val() == "") ? "true" : deInputTag.val(); // "true" is for TRUE_ONLY field
+      }
+      return value;
+    }
+
+
+    me.removeDataValue = function (deId, exeFunc) {
+      var jsonData = {
+        de: deId,
+        co: "X66r2y4EuwS",
+        ds: me.selectedDataSetIdTag.val(),
+        value: "",
+        ou: dhis2.de.getCurrentOrganisationUnit(),
+        pe: me.selectedPeriodIdTag.val(),
+        cc: dhis2.de.getCurrentCategoryCombo(),
+        cp: dhis2.de.getCurrentCategoryOptionsQueryValue()
+      };
+
+      $.ajax({
+        url: "../api/dataValues",
+        beforeSend: function (xhr) {
+          xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        },
+        type: "post",
+        data: jsonData,
+        success: function (response) {
+          if (exeFunc) exeFunc(response);
+        }
+      });
+    }
+
+
     me.init();
   }
-
 
 
   function MARCustomForm() {
@@ -1946,9 +1965,102 @@ rem {
     me.init();
   }
 
+  // ============================================================================================================
+  // Translation
+
+  function MARFormTranslation(_exeFunc) {
+    var me = this;
+
+    me.exeFunc = _exeFunc;
+
+    me.optionSetTermId = "xstM0mnnien";
+
+    me.loadedDataSetElementList = false;
+    me.loadedOptionSetList = false;
+
+    me.OPTION_KEY = "opt_c";
+
+
+    // ----------------------------------------------------------------------------------------------
+    // URLs
+
+    me.QUERY_URL_TERMS = "../api/optionSets/" + me.optionSetTermId +
+      ".json?fields=options[code,displayName]&paging=false";
+
+
+    // ----------------------------------------------------------------------------------------------
+    // HTML Element
+
+
+    me.tableTag = $("body");
+
+    // ----------------------------------------------------------------------------------------------
+    // Init method
+
+    me.init = function () {
+      console.log("INIT translation ... ");
+      me.translateOptionSetList();
+    }
+
+    // ----------------------------------------------------------------------------------------------
+    // Supportive methods
+
+    me.translateOptionSetList = function () {
+      var url = encodeURI(me.QUERY_URL_TERMS);
+      me.loadMetadata(url, function (response) {
+
+        var options = response.options;
+        for (var j in options) {
+          var option = options[j];
+          var code = option.code;
+          var value = option.displayName;
+
+          MARFormTranslation.keywords[code] = value;
+
+          me.tableTag.find("[keyword='" + me.OPTION_KEY + ":" + code + "']")
+            .html(value);
+        }
+
+        me.exeFunc();
+      });
+    }
+
+    me.loadMetadata = function (url, exeFunc) {
+      $.ajax({
+        type: "GET",
+        url: url,
+        contentType: "application/json;charset=utf-8",
+        beforeSend: function (xhr) {
+          //me.hideReportTag();
+        },
+        success: function (response) {
+          exeFunc(response);
+        }
+      });
+
+    }
+
+
+    // ----------------------------------------------------------------------------------------------
+    // init
+
+    me.init();
+
+  }
+
+  MARFormTranslation.keywords = {};
+  MARFormTranslation.translate = function (key, defaultValue) {
+    var value = MARFormTranslation.keywords[key];
+    return (value) ? value : defaultValue;
+  }
+
   $(document).off('dhis2.de.event.dataValuesLoaded').on('dhis2.de.event.dataValuesLoaded', function () {
 
     new MARCustomForm();
+    new RenderRadioBtnTags();
+
+    $("#loaderDiv").hide();
+    $("#MARCustomForm_Content").show();
   });
 
 
@@ -1958,92 +2070,13 @@ rem {
       $("#MARCustomForm_Content").hide();
 
       $("#MARCustomForm").find("[catoption]").hide();
-      new RenderRadioBtnTags();
+
       $("#loaderDiv").show();
 
-      new dsetTranslation(function () {
-        $("#loaderDiv").hide();
-        $("#MARCustomForm_Content").show();
+      new MARFormTranslation(function () {
+        // $("#loaderDiv").hide();
+        // $("#MARCustomForm_Content").show();
       });
-    }
-
-    // ============================================================================================================
-    // Translation
-
-    function dsetTranslation(_exeFunc) {
-      var me = this;
-
-      me.exeFunc = _exeFunc;
-
-      me.optionSetTermId = "xstM0mnnien";
-
-      me.loadedDataSetElementList = false;
-      me.loadedOptionSetList = false;
-
-      me.OPTION_KEY = "opt_c";
-
-
-      // ----------------------------------------------------------------------------------------------
-      // URLs
-
-      me.QUERY_URL_TERMS = "../api/optionSets/" + me.optionSetTermId +
-        ".json?fields=options[code,displayName]&paging=false";
-
-
-      // ----------------------------------------------------------------------------------------------
-      // HTML Element
-
-
-      me.tableTag = $("body");
-
-      // ----------------------------------------------------------------------------------------------
-      // Init method
-
-      me.init = function () {
-        console.log("INIT translation ... ");
-        me.translateOptionSetList();
-      }
-
-      // ----------------------------------------------------------------------------------------------
-      // Supportive methods
-
-      me.translateOptionSetList = function () {
-        var url = encodeURI(me.QUERY_URL_TERMS);
-        me.loadMetadata(url, function (response) {
-
-          var options = response.options;
-          for (var j in options) {
-            var option = options[j];
-            var value = option.displayName;
-            me.tableTag.find("[keyword='" + me.OPTION_KEY + ":" + option.code + "']")
-              .html(value);
-          }
-
-          me.exeFunc();
-        });
-      }
-
-      me.loadMetadata = function (url, exeFunc) {
-        $.ajax({
-          type: "GET",
-          url: url,
-          contentType: "application/json;charset=utf-8",
-          beforeSend: function (xhr) {
-            //me.hideReportTag();
-          },
-          success: function (response) {
-            exeFunc(response);
-          }
-        });
-
-      }
-
-
-      // ----------------------------------------------------------------------------------------------
-      // init
-
-      me.init();
-
     }
   });
 </script>
